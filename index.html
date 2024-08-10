@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
+            width: 360px; /* Ширина */
+            height: 740px; /* Высота */
+            margin: 0; /* Убираем отступы по умолчанию */
             font-family: 'Roboto', sans-serif;
             text-align: center;
             margin: 0;
@@ -441,30 +444,55 @@
         <img src="EROR43-vmake.jpg" alt="Карта" style="width: 100%; height: auto;">
         <div id="counter" style="font-size: 2em; color: rgb(255, 255, 255); margin-bottom: 15px; position: absolute; top: 12%; left: 50%; transform: translate(-50%, -50%);">0</div>
         
-        <!-- Кнопка "Connect Wallet" и таймер, расположенные внизу экрана -->
-        <div id="connectWalletContainer" style="position: absolute; bottom: 20px; left: 50%; transform: translate(-50%, 0); text-align: center;">
+        <div id="connectWalletContainer" style="position: absolute; bottom: 10vh; left: 50%; transform: translate(-50%, 0); text-align: center;">
             <button id="connectWalletButton" style="
                 background-color: #007bff; /* Синий фон */
                 color: white; /* Цвет текста */
                 border: none;
                 border-radius: 5px;
-                padding: 6.5px 13px; /* Увеличенные отступы */
+                padding: 0.5rem 1rem; /* Уменьшенные отступы */
                 cursor: pointer;
                 font-family: 'Junegull', sans-serif;
-                font-size: 0.75em; /* Уменьшенный размер шрифта */
-                transform: scale(1.3); /* Масштабирование в 1.3 раза */
+                font-size: 0.8em; /* Уменьшенный размер шрифта */
+                transform: scale(1); /* Масштабирование в 1 раз */
+                margin-bottom: 1rem; /* Добавляем отступ снизу */
             ">
                 Connect Wallet
             </button>
-            <div id="timer2" style="font-size: 1.2em; color: rgb(0, 204, 255); margin-top: 5px;"></div> 
+            <div id="timer2" style="font-size: 0.75em; color: rgb(0, 204, 255); margin-top: 0.5rem;"></div> 
         </div>
         
+        <style>
+            @media (max-width: 768px) {
+                #connectWalletContainer {
+                    bottom: 5vh; /* Опускаем блок ниже на мобильных устройствах */
+                }
+                #connectWalletButton {
+                    font-size: 0.6em; /* Уменьшаем размер шрифта */
+                }
+                #timer2 {
+                    font-size: 0.375em; /* Уменьшаем размер шрифта для таймера */
+                }
+                #connectWalletButton {
+                    margin-bottom: 0.5rem; /* Уменьшаем отступ снизу на мобильных */
+                }
+            }
+        </style>
+        
+        
+       
+        
+        
+        
+        
         
         </div>
-        <span style="color: rgb(255, 255, 255);"> выполнить выполнить выполнить выпоdsvsdvsdvsdvsdvsdvsdvsdvdsvsdvsdvdssnvdvdsnvdnjkvdsnjknsdvjknsdvjknsvgjjsdvnjkvnsdjksdvjknvjsvdnjsvgngvsenksdvлнить выполнить vvvвыполнить vvвыполнить выполнить выполнить  </span>  
+       
     </div>
     
     <script>
+        
+            
         // Таймер на 5 дней (в миллисекундах)
         const countdownDuration = 5 * 24 * 60 * 60 * 1000;
         let countdownEnd = Date.now() + countdownDuration;
@@ -573,7 +601,7 @@
                 
 
             </div>
-             <span style="color: rgb(255, 255, 255);"> выполнить выполнитьewfffffffffweffeewfefwewferfwefwefewfewwffefeewfwef выполнить выполнить выполнить vvvвыполнить vvвыполнить выполнить выполнить  </span>  
+             <span style="color: rgb(255, 255, 255);"> выполнить выполнить выполнить выполнить выполнить vvvвыполнить vvвыполнить выполнить выполнить  </span>  
             <button class="btn btn-secondary">Show more tasks</button>
         </div>
     </div>
@@ -1014,4 +1042,5 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    </body>
   </html>
+
 
